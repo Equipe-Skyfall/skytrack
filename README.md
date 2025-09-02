@@ -142,7 +142,7 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 ## 📝 Sprint Backlog <a name="backsprint"><a>
 
 
-### [Clique aqui para ser redirecionado](https://github.com/DuuhZero/backlog/tree/main/docs)
+### [Clique aqui para ser redirecionado](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Backlog_sprint1.MD)
 
 ---
 

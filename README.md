@@ -8,7 +8,7 @@
   #### Main - Estado principal que armazena a versão estável do projeto
   #### Dev - Estado de desenvolvimento atual
   #### Sprint X - Instancia de todos respositórios ao fim da Sprint X
-### ⏳ Status do projeto: 0/3 Sprint
+### ⏳ Status do projeto: 1/3 Sprint
 
 ### 📃 Respositórios 
 - [Repositório FrontEnd](https://github.com/Equipe-Skyfall/skytrack-front)

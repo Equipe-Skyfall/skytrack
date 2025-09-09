@@ -4,6 +4,8 @@
 
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
+ <img src="https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sistema%20de%20Monitoramento%20Meteorol%C3%B3gico.png">
+
 ### 📃 Estrutura de Branchs 
   #### Main - Estado principal que armazena a versão estável do projeto
   #### Dev - Estado de desenvolvimento atual

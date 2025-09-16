@@ -17,10 +17,14 @@
 
 ## 📑 Sumário
 - [Visão do Projeto](#visao-do-projeto)
+- [Cronograma do Projeto](#cronograma)
 - [Tecnologias utilizadas](#tecnologias)
+- [Padrões de Commit](#padrao)
 - [MVP](#mvp)
+- [Requisitos](#requisitos)
 - [Product Backlog](#backlog)
 - [Sprint Backlog](#backsprint)
+- [Links úteis](#links)
 - [Equipe](#equipe)
 ---
 
@@ -53,17 +57,27 @@
 <p>Nosso projeto é um Sistema de Coleta de Dados Meteorológico em Tempo Real, com foco na prevenção de riscos e desastres naturais. A plataforma visa centralizar e analisar informações, como índices de chuva, captadas por uma rede de sensores de baixo custo. Será incluso um modelo dinâmico para a aceitação de diversos tipos de estações, facilitando a obtenção de dados oriundos de diversas fontes. As informações serão exibidas em um painel de controle moderno e intuitivo, enquanto um sistema de notificações proativo alertará os usuários sobre potenciais riscos, como inundações e deslizamentos. O sistema também incluirá um espaço de conteúdo educacional, expondo de forma clara a lógica utilizada pelo sistema para captação de dados e informações estimadas.</p>
 
 ---
+## Cronograma de Sprints <a name="cronograma"></a>
+| Sprint | Data | Status | Relatório |
+|:------:|:----:|:------:|:---------:|
+| 1 | 08/09/2025 à 28/09/2025 | Em andamento | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1)|
+| 2 | 06/10/2025 à 26/09/2025 | Em Breve ||
+| 3 | 03/11/2025 à 23/11/2025 | Em Breve ||
+---
 
 ## 💻 Tecnologias utilizadas <a name="tecnologias"></a>
 <div align="center">
-<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/Jira-217346?style=for-the-badge&logo=Jira&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/Microsoft_Teams-6264A7?style=for-the-badge&logo=microsoft-teams&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/typescript-000000?style=for-the-badge&logo=typescript&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/react-000000?style=for-the-badge&logo=react&logoColor=black&color=06b6d4">
-<img src="https://img.shields.io/badge/tailwind-000000?style=for-the-badge&logo=tailwindcss&logoColor=black&color=06b6d4">
+<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/Jira-217346?style=for-the-badge&logo=Jira&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/Microsoft_Teams-6264A7?style=for-the-badge&logo=microsoft-teams&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/typescript-000000?style=for-the-badge&logo=typescript&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/react-000000?style=for-the-badge&logo=react&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/tailwind-000000?style=for-the-badge&logo=tailwindcss&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/mongodb-000000?style=for-the-badge&logo=mongodb&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/postgresql-000000?style=for-the-badge&logo=postgresql&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/arduino-000000?style=for-the-badge&logo=arduino&logoColor=black&color=ADD8E6">
 </div>
 
 ### 📃 Estrutura de Branchs 
@@ -72,7 +86,7 @@
   #### Sprint X - Instancia de todos respositórios ao fim da Sprint X
 ### ⏳ Status do projeto: 1/3 Sprint
 
-## 💻 Padrões de commit
+## 💻 Padrões de commit <a name="padrao"></a>
 
 **FEAT**: Adiciona um novo recurso ou funcionalidade.
   Exemplo: FEAT - Adição da navbar
@@ -112,7 +126,8 @@ Convenções Adicionais
 Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 
 ---
-### Requisitos Funcionais
+
+### Requisitos Funcionais <a name="requisitos"><a>
 
 | RF | Nome | Descritivo |
 |:--:|:----:|:----------:|
@@ -173,8 +188,20 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 
 ## 📝 Sprint Backlog <a name="backsprint"><a>
 
+| Sprint | Backlog da Sprint |
+|:------:|:-----------------:|
+| 1 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1/Backlog_sprint1.MD)|
+| 2 | |
+| 3 | |
+---
 
-### [Clique aqui para ser redirecionado](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1/Backlog_sprint1.MD)
+## Links Úteis <a name="links"><a>
+
+- [Arquitetura do Projeto](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Arquitetura%20do%20Projeto.pdf)
+- [Modelo de Entidade e Relacionamento](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Modelo-Entidade-Relacionamento.png)
+- [WireFrame](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Wireframe-Skytrack.pdf)
+- [Product Backlog e Requisitos](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Product%20Backlog%20e%20Requisitos-2.pdf)
+
 
 ---
 

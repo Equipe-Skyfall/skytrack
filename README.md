@@ -6,11 +6,6 @@
 
  <img src="https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sistema%20de%20Monitoramento%20Meteorol%C3%B3gico.png">
 
-### 📃 Estrutura de Branchs 
-  #### Main - Estado principal que armazena a versão estável do projeto
-  #### Dev - Estado de desenvolvimento atual
-  #### Sprint X - Instancia de todos respositórios ao fim da Sprint X
-### ⏳ Status do projeto: 1/3 Sprint
 
 ### 📃 Respositórios 
 - [Repositório FrontEnd](https://github.com/Equipe-Skyfall/skytrack-front)
@@ -71,6 +66,12 @@
 <img src="https://img.shields.io/badge/tailwind-000000?style=for-the-badge&logo=tailwindcss&logoColor=black&color=06b6d4">
 </div>
 
+### 📃 Estrutura de Branchs 
+  #### Main - Estado principal que armazena a versão estável do projeto
+  #### Dev - Estado de desenvolvimento atual
+  #### Sprint X - Instancia de todos respositórios ao fim da Sprint X
+### ⏳ Status do projeto: 1/3 Sprint
+
 ## 💻 Padrões de commit
 
 **FEAT**: Adiciona um novo recurso ou funcionalidade.
@@ -109,6 +110,35 @@ Exemplo: PERF - Otimiza a execução de consultas no banco de dados
 Convenções Adicionais
 
 Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
+
+---
+### Requisitos Funcionais
+
+| RF | Nome | Descritivo |
+|:--:|:----:|:----------:|
+|RF1 | Integração de novas estações meteorológicas |O sistema deve possibilitar a conexão rápida e simples de novas estações físicas, de maneira dinâmica para diferentes tipos de sensores.|
+|RF2 | Aquisição de dados meteorológicos | O software precisa coletar, armazenar e interpretar de forma persistente e segura os dados recebidos dos sensores.|
+|RF3 | Dashboards | Deve existir um painel visual que mostre graficamente os parâmetros de cada estação e também um panorama geral.|
+|RF4 | Montagem de Estação Meteorológica | É necessária a construção física de uma estação meteorológica para a utilização de dados da mesma.|
+|RF5 | Notificações meteorológicas | Devem ser emitidos avisos e alertas baseados em condições climáticas específicas.|
+|RF6 | Guias interativos |  A aplicação deve oferecer explicações sobre parâmetros e riscos associados.|
+|RF7 | Gestão de administradores | Deve ser possível cadastrar novos administradores para possibilitar a configuração do software.|
+|RF8 | Relatórios | A aplicação deve gerar ao menos três relatórios distintos, trazendo análises sobre os dados coletados.|
+|RF9 | Crud de Entidades | Deve ser possível a utilização de um CRUD completo de Estação, Parâmetros, Alertas e Usuários Administradores.|
+
+### Requisitos Não Funcionais
+
+| RFN | Nome | Descritivo |
+|:--:|:----:|:----------:|
+|RFN1 | Experiência do Usuário (UX) |Design dos dashboards deve priorizar a usabilidade e a estética para melhor engajamento dos usuários.|
+|RFN2 | Engajamento Estudantil | Fomentar o interesse dos alunos do ensino médio pelo estudo através da aplicação prática de conceitos em um contexto de aprendizado baseado em problemas.|
+|RFN3 | Documentação de APIs | Elaboração detalhada da documentação para todas as rotas da API, incluindo exemplos de uso.|
+|RFN4 | Pipeline de Integração Contínua (IC) | Implementação de um pipeline de IC para automação de testes e validações de código.|
+|RFN5 | Deploy Automático | Configuração de processos automáticos de deploy para garantir atualizações consistentes do sistema.|
+
+
+
+
 
 ---
 

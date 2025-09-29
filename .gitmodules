@@ -8,3 +8,7 @@
     url = https://github.com/seu-usuario/frontend.git
     branch = main
 
+[submodule "broker"]
+	path = broker
+	url = https://github.com/Equipe-Skyfall/skytrack-broker.git
+	branch = main

@@ -1,11 +1,11 @@
 [submodule "backend"]
     path = backend
-    url = https://github.com/seu-usuario/backend.git
+    url = https://github.com/Equipe-Skyfall/skytrack-back.git
     branch = main
 
 [submodule "frontend"]
     path = frontend
-    url = https://github.com/seu-usuario/frontend.git
+    url = https://github.com/Equipe-Skyfall/skytrack-front.git
     branch = main
 
 [submodule "broker"]

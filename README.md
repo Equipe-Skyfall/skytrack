@@ -84,7 +84,7 @@
   #### Main - Estado principal que armazena a versão estável do projeto
   #### Dev - Estado de desenvolvimento atual
   #### Sprint X - Instancia de todos respositórios ao fim da Sprint X
-### ⏳ Status do projeto: 1/3 Sprint
+### ⏳ Status do projeto: 2/3 Sprint
 
 ## 💻 Padrões de commit <a name="padrao"></a>
 
@@ -162,23 +162,23 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 
 | RANK | SPRINT | PRIORIDADE | ESTIMATIVA | USER STORY (NOME)                                             | STATUS |
 |:----:|:------:|:----------:|:----------:|:-------------------------------------------------------------:|:------:|
-| 1    |   1   |    Alta     |     5      | Como Administrador, quero um CRUD para as estações, para gerenciamento de suas informações.|        |
-| 2    |   1   |    Alta     |     3      | Como Usuário Público, quero visualizar a lista de estações, para que eu saiba qual é a estação dos dados exibidos.|        |
-| 3    |   1   |    Alta     |     5      | Como Administrador, quero um CRUD para os parâmetros utilizados nas estações, para manusear os dados de maneira adequada.|        |
-| 4   |   1   |   Alta     |      3     | Como Administrador, quero que o sistema tenha um serviço de recepção de dados a cada periodo de tempo, para que múltiplas estações enviem informações sem perda.|        |
-| 5    |   1   |    Alta     |    5       | Como Administrador, quero um CRUD para os alertas de condições meteorológicas, para gerar notificações com base em informações meteorológicas.|        |
-| 6   |   1   |   Alta      |     8      | Como Administrador, quero processar e armazenar automaticamente os dados recebidos por meio de um datalogger, para utilização destes no Dashboard|        |
-| 7   |   1   |  Alta   |      8     | Como Cliente, quero que o sistema tenha um modelo dinâmico que seja capaz de receber e registrar diversas estações com sensores diferentes, para a possibilidade de receber os dados de diversas fontes.|        |
-| 8    |   1   |    Alta      |     5      | Como Administrador, quero um CRUD para os usuários da aplicação, para melhor gerênciamento de acesso.|        |
+| 1    |   1   |    Alta     |     5      | Como Administrador, quero um CRUD para as estações, para gerenciamento de suas informações.|   ✅     |
+| 2    |   1   |    Alta     |     3      | Como Usuário Público, quero visualizar a lista de estações, para que eu saiba qual é a estação dos dados exibidos.|  ✅      |
+| 3    |   1   |    Alta     |     5      | Como Administrador, quero um CRUD para os parâmetros utilizados nas estações, para manusear os dados de maneira adequada.|  ✅      |
+| 4   |   1   |   Alta     |      3     | Como Administrador, quero que o sistema tenha um serviço de recepção de dados a cada periodo de tempo, para que múltiplas estações enviem informações sem perda.|   ✅     |
+| 5    |   1   |    Alta     |    5       | Como Administrador, quero um CRUD para os alertas de condições meteorológicas, para gerar notificações com base em informações meteorológicas.|   ✅     |
+| 6   |   1   |   Alta      |     8      | Como Administrador, quero processar e armazenar automaticamente os dados recebidos por meio de um datalogger, para utilização destes no Dashboard|   ✅     |
+| 7   |   1   |  Alta   |      8     | Como Cliente, quero que o sistema tenha um modelo dinâmico que seja capaz de receber e registrar diversas estações com sensores diferentes, para a possibilidade de receber os dados de diversas fontes.|  ✅      |
+| 8    |   1   |    Alta      |     5      | Como Administrador, quero um CRUD para os usuários da aplicação, para melhor gerênciamento de acesso.|   ✅     |
 | 9    |   2   |    Média    |      8     | Como Usuário Público, quero que seja possível receber alertas relevantes, para que eu saiba quando condições perigosas ocorrerem.|        |
 | 10    |   2   |    Média     |    3       | Como Cliente, quero um controle de acesso que diferencie as permissões do Administrador e do Usuário Público, para que tenha segurança no gerênciamento de informações do sistema.|        |
-| 11    |   2   |   Média   |      3     | Como Usuário Público, quero acessar um Dashboard de informações, para que eu compreenda os dados meteorológicos facilmente.|        |
+| 11    |   2   |   Média   |      3     | Como Usuário Público, quero acessar um Dashboard de informações, para que eu compreenda os dados meteorológicos facilmente.|       |
 | 12    |  2   |    Média    |     5      | Como Administrador, quero poder editar as informações exibidas no Dashboard, para dados de minha escolha.|        |
 | 13    |  2   |    Média    |    3       | Como Administrador, quero gerar relatórios detalhados, para que seja possível a geração de insights.|        |
-| 14   |   2   |    Média    |      3      | Como Administrador, quero consultar o histórico de alertas gerados. Para que eu entenda os padrões de ocorrências.|        |
+| 14   |   2   |    Média    |      3      | Como Administrador, quero consultar o histórico de alertas gerados. Para que eu entenda os padrões de ocorrências.|       |
 | 15   |   3   |    Baixa    |      3     | Como Usuário, eu quero visualizar conceitos estatísticos nos dashboards, para análises mais precisas.|        |
 | 16    |  3   |    Baixa    |      2     | Como Usuário Público, quero acessar relatórios prontos em PDF, para que eu possa utilizar como fonte de dados.|        |
-| 17   |   3   |    Baixa    |      2     | Como Usuário Público, quero acessar um guia explicativo sobre cada parâmetro meteorológico, incluindo as fórmulas utilizadas, para que eu aprenda o que significam os dados coletados.|         |
+| 17   |   3   |    Baixa    |      2     | Como Usuário Público, quero acessar um guia explicativo sobre cada parâmetro meteorológico, incluindo as fórmulas utilizadas, para que eu aprenda o que significam os dados coletados.|        |
 | 18   |   3   |   Baixa    |      8     | Como Cliente, quero uma estação meteorológica física montada com sensores, para que os dados sejam coletados em tempo real e enviados ao sistema.|        |
 
 

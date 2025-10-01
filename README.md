@@ -139,7 +139,7 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 |RF6 | Guias interativos |  A aplicação deve oferecer explicações sobre parâmetros e riscos associados.|
 |RF7 | Gestão de administradores | Deve ser possível cadastrar novos administradores para possibilitar a configuração do software.|
 |RF8 | Relatórios | A aplicação deve gerar ao menos três relatórios distintos, trazendo análises sobre os dados coletados.|
-|RF9 | Crud de Entidades | Deve ser possível a utilização de um CRUD completo de Estação, Parâmetros, Alertas e Usuários Administradores.|
+|RF9 | Crud de Entidades | Deve ser possível a utilização de um CRUD completo de Estação, Parâmetros, Tipo Alertas e Usuários Administradores.|
 
 ### Requisitos Não Funcionais
 
@@ -166,7 +166,7 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 | 2    |   1   |    Alta     |     3      | Como Usuário Público, quero visualizar a lista de estações, para que eu saiba qual é a estação dos dados exibidos.|  ✅      |
 | 3    |   1   |    Alta     |     5      | Como Administrador, quero um CRUD para os parâmetros utilizados nas estações, para manusear os dados de maneira adequada.|  ✅      |
 | 4   |   1   |   Alta     |      3     | Como Administrador, quero que o sistema tenha um serviço de recepção de dados a cada periodo de tempo, para que múltiplas estações enviem informações sem perda.|   ✅     |
-| 5    |   1   |    Alta     |    5       | Como Administrador, quero um CRUD para os alertas de condições meteorológicas, para gerar notificações com base em informações meteorológicas.|   ✅     |
+| 5    |   1   |    Alta     |    5       | Como Administrador, quero um CRUD para os tipos de alertas para condições meteorológicas, para gerar notificações com base em informações meteorológicas.|   ✅     |
 | 6   |   1   |   Alta      |     8      | Como Administrador, quero processar e armazenar automaticamente os dados recebidos por meio de um datalogger, para utilização destes no Dashboard|   ✅     |
 | 7   |   1   |  Alta   |      8     | Como Cliente, quero que o sistema tenha um modelo dinâmico que seja capaz de receber e registrar diversas estações com sensores diferentes, para a possibilidade de receber os dados de diversas fontes.|  ✅      |
 | 8    |   1   |    Alta      |     5      | Como Administrador, quero um CRUD para os usuários da aplicação, para melhor gerênciamento de acesso.|   ✅     |

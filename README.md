@@ -60,8 +60,8 @@
 ## Cronograma de Sprints <a name="cronograma"></a>
 | Sprint | Data | Status | Relatório |
 |:------:|:----:|:------:|:---------:|
-| 1 | 08/09/2025 à 28/09/2025 | Em andamento | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1)|
-| 2 | 06/10/2025 à 26/09/2025 | Em Breve ||
+| 1 | 08/09/2025 à 28/09/2025 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1)|
+| 2 | 06/10/2025 à 26/09/2025 | Em Andamento |[Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202)|
 | 3 | 03/11/2025 à 23/11/2025 | Em Breve ||
 ---
 

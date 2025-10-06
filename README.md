@@ -78,6 +78,10 @@
 <img src="https://img.shields.io/badge/mongodb-000000?style=for-the-badge&logo=mongodb&logoColor=black&color=ADD8E6">
 <img src="https://img.shields.io/badge/postgresql-000000?style=for-the-badge&logo=postgresql&logoColor=black&color=ADD8E6">
 <img src="https://img.shields.io/badge/arduino-000000?style=for-the-badge&logo=arduino&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/prisma-000000?style=for-the-badge&logo=prisma&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/node-000000?style=for-the-badge&logo=node&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=black&color=ADD8E6">
 </div>
 
 ### 📃 Estrutura de Branchs 

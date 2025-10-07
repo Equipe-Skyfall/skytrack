@@ -4,7 +4,7 @@
 
 > _A API se trata de um projeto submetido à metodologia de ensino em implantação na Fatec São José dos Campos, do qual os alunos formam equipes baseadas na metodologia ágil SCRUM, tendo um aluno como Scrum Master, um sendo o Product Owner e o restante dos integrantes como Dev Team._
 
- <img src="https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sistema%20de%20Monitoramento%20Meteorol%C3%B3gico.png">
+ <img src="https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Sistema%20de%20Monitoramento%20Meteorol%C3%B3gico.png">
 
 
 ### 📃 Respositórios 
@@ -60,7 +60,7 @@
 ## Cronograma de Sprints <a name="cronograma"></a>
 | Sprint | Data | Status | Relatório |
 |:------:|:----:|:------:|:---------:|
-| 1 | 08/09/2025 à 28/09/2025 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1)|
+| 1 | 08/09/2025 à 28/09/2025 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201)|
 | 2 | 06/10/2025 à 26/09/2025 | Em Andamento |[Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202)|
 | 3 | 03/11/2025 à 23/11/2025 | Em Breve ||
 ---
@@ -194,17 +194,17 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 
 | Sprint | Backlog da Sprint |
 |:------:|:-----------------:|
-| 1 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint1/Backlog_sprint1.MD)|
-| 2 | |
+| 1 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201/Backlog_sprint1.MD)|
+| 2 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202/Backlog_sprint2.MD)|
 | 3 | |
 ---
 
 ## Links Úteis <a name="links"><a>
 
-- [Arquitetura do Projeto](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Arquitetura%20do%20Projeto.pdf)
-- [Modelo de Entidade e Relacionamento](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Modelo-Entidade-Relacionamento.png)
-- [WireFrame](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Wireframe-Skytrack.pdf)
-- [Product Backlog e Requisitos](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Product%20Backlog%20e%20Requisitos-2.pdf)
+- [Arquitetura do Projeto](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Arquitetura%20do%20Projeto.pdf)
+- [Modelo de Entidade e Relacionamento](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Modelo-Entidade-Relacionamento.png)
+- [WireFrame](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Wireframe-Skytrack.pdf)
+- [Product Backlog e Requisitos](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Product%20Backlog%20e%20Requisitos-2.pdf)
 
 
 ---

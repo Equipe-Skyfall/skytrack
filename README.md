@@ -152,7 +152,7 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 |RFN1 | Experiência do Usuário (UX) |Design dos dashboards deve priorizar a usabilidade e a estética para melhor engajamento dos usuários.|
 |RFN2 | Engajamento Estudantil | Fomentar o interesse dos alunos do ensino médio pelo estudo através da aplicação prática de conceitos em um contexto de aprendizado baseado em problemas.|
 |RFN3 | Documentação de APIs | Elaboração detalhada da documentação para todas as rotas da API, incluindo exemplos de uso.|
-|RFN4 | Pipeline de Integração Contínua (IC) | Implementação de um pipeline de IC para automação de testes e validações de código.|
+|RFN4 | Pipeline de Integração Contínua (IC) | Implementação de um pipeline de CI para automação de testes e validações de código.|
 |RFN5 | Deploy Automático | Configuração de processos automáticos de deploy para garantir atualizações consistentes do sistema.|
 
 
@@ -178,10 +178,10 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 | 10    |   2   |    Média     |    3       | Como Cliente, quero um controle de acesso que diferencie as permissões do Administrador e do Usuário Público, para que tenha segurança no gerênciamento de informações do sistema.|        |
 | 11    |   2   |   Média   |      3     | Como Usuário Público, quero acessar um Dashboard de informações, para que eu compreenda os dados meteorológicos facilmente.|       |
 | 12    |  2   |    Média    |     5      | Como Administrador, quero poder editar as informações exibidas no Dashboard, para dados de minha escolha.|        |
-| 13    |  2   |    Média    |    3       | Como Administrador, quero gerar relatórios detalhados, para que seja possível a geração de insights.|        |
+| 13    |  2   |    Média    |    3       | Como Administrador, quero gerar relatórios detalhados em forma de gráfico no Dashboard, para que seja possível a geração de insights.|        |
 | 14   |   2   |    Média    |      3      | Como Administrador, quero consultar o histórico de alertas gerados. Para que eu entenda os padrões de ocorrências.|       |
 | 15   |   3   |    Baixa    |      3     | Como Usuário, eu quero visualizar conceitos estatísticos nos dashboards, para análises mais precisas.|        |
-| 16    |  3   |    Baixa    |      2     | Como Usuário Público, quero acessar relatórios prontos em PDF, para que eu possa utilizar como fonte de dados.|        |
+| 16    |  3   |    Baixa    |      2     | Como Usuário Público, quero acessar uma planilha de relatório em CSV, para que eu possa utilizar como fonte de dados.|        |
 | 17   |   3   |    Baixa    |      2     | Como Usuário Público, quero acessar um guia explicativo sobre cada parâmetro meteorológico, incluindo as fórmulas utilizadas, para que eu aprenda o que significam os dados coletados.|        |
 | 18   |   3   |   Baixa    |      8     | Como Cliente, quero uma estação meteorológica física montada com sensores, para que os dados sejam coletados em tempo real e enviados ao sistema.|        |
 

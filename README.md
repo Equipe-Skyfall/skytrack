@@ -62,7 +62,7 @@
 |:------:|:----:|:------:|:---------:|
 | 1 | 08/09/2025 à 28/09/2025 | Concluído | [Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201)|
 | 2 | 06/10/2025 à 26/09/2025 | Concluído |[Ver Relatório](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202)|
-| 3 | 03/11/2025 à 23/11/2025 | Em Andamento ||
+| 3 | 03/11/2025 à 23/11/2025 | Em Andamento | |
 ---
 
 ## 💻 Tecnologias utilizadas <a name="tecnologias"></a>
@@ -196,7 +196,7 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 |:------:|:-----------------:|
 | 1 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%201/Backlog_sprint1.MD)|
 | 2 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%202/Backlog_sprint2.MD)|
-| 3 | |
+| 3 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%203/Backlog_sprint3.md)|
 ---
 
 ## Links Úteis <a name="links"><a>

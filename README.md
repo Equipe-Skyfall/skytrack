@@ -20,7 +20,6 @@
 - [Cronograma do Projeto](#cronograma)
 - [Tecnologias utilizadas](#tecnologias)
 - [Padrões de Commit](#padrao)
-- [MVP](#mvp)
 - [Requisitos](#requisitos)
 - [Product Backlog](#backlog)
 - [Sprint Backlog](#backsprint)

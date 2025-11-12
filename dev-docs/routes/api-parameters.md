@@ -1,5 +1,8 @@
 # API: Parameters
 
+Teste as rotas em: https://sky-track-backend.vercel.app/docs#/Stations
+
+
 Onde encontrar o arquivo: `../skytrack-back/src/parameters/parameter.controller.ts`
 
 Pasta: `/parameters`

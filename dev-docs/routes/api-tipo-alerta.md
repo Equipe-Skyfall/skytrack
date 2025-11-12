@@ -1,5 +1,7 @@
 # API: Tipo Alerta
 
+Teste as rotas em: https://sky-track-backend.vercel.app/docs#/Stations
+
 Onde encontrar o arquivo: `../skytrack-back/src/tipo-alerta/tipo-alerta.controller.ts`
 
 Pasta: `/tipo-alerta`

@@ -1,5 +1,7 @@
 # API: Alerts (RegisteredAlerts)
 
+Teste as rotas em: https://sky-track-backend.vercel.app/docs#/Stations
+
 Onde encontrar o arquivo: `../skytrack-back/src/alerts/alert.controller.ts`
 
 Pasta: `/alerts`

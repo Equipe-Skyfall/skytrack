@@ -1,5 +1,8 @@
 # API: App (API Info)
 
+Teste as rotas em: https://sky-track-backend.vercel.app/docs#/Stations
+
+
 Onde encontrar o arquivo: `../skytrack-back/src/app.controller.ts`
 
 Pasta: `/`

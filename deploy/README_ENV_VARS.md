@@ -1,5 +1,19 @@
 # Configuração de Variáveis de Ambiente para Deploy
 
+## Estrutura do Projeto no VPS
+
+No VPS, os repositórios estão clonados manualmente (não usando git submodules):
+```
+/path/to/project/
+├── skytrack/                    # Repo principal com deploy configs
+│   └── deploy/                  # docker-compose files estão aqui
+├── skytrack-back/              # Backend clonado separadamente
+├── skytrack-front/             # Frontend clonado separadamente  
+└── skytrack-broker/            # Broker clonado separadamente
+```
+
+Os docker-compose files usam paths relativos (`../skytrack-*`) para referenciar os repos clonados.
+
 ## Por que usar variáveis de ambiente em vez de arquivos .env?
 
 1. **Segurança**: Credenciais não ficam no repositório

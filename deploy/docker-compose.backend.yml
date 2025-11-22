@@ -7,15 +7,15 @@ services:
       - "9001:9001"   # MQTT over WebSockets (se necessário)
     volumes:
       # Bind-mount local config so it's editable and versioned in the repo
-      - ./mosquitto/config:/mosquitto/config
-      - ./mosquitto/data:/mosquitto/data
-      - ./mosquitto/log:/mosquitto/log
+      - ../skytrack-broker/mosquitto/config:/mosquitto/config
+      - ../skytrack-broker/mosquitto/data:/mosquitto/data
+      - ../skytrack-broker/mosquitto/log:/mosquitto/log
     networks:
       - skytrack-backend-net
 
   broker:
     build:
-      context: ./skytrack-broker
+      context: ../skytrack-broker
       dockerfile: Dockerfile
     image: skytrack-broker:latest
     restart: unless-stopped
@@ -42,7 +42,7 @@ services:
 
   backend:
     build:
-      context: ./skytrack-back
+      context: ../skytrack-back
       dockerfile: Dockerfile
     image: skytrack-back:latest
     restart: unless-stopped

@@ -24,11 +24,14 @@ services:
     # This avoids loading a local file and allows the host to provide
     # secrets and connection strings securely.
     environment:
-      - PORT=3001
-      - MQTT_HOST=mosquitto               # internal service name for Docker network
-      - MQTT_PASSWORD=${MQTT_PASSWORD}    # comes from VPS/host env
-      - MQTT_USERNAME=${MQTT_USERNAME:-}
+      - BROKER_PORT=${BROKER_PORT:-3001}
+      - MQTT_HOST=${MQTT_HOST}
+      - MQTT_PASSWORD=${MQTT_PASSWORD}
+      - MQTT_USERNAME=${MQTT_USERNAME:-skytrack}
       - DATABASE_URL=${DATABASE_URL}
+      - MONGO_CONNECTION_STRING=${MONGO_CONNECTION_STRING}
+      - MONGO_DATABASE=${MONGO_DATABASE:-dadosClima}
+      - MONGO_COLLECTION=${MONGO_COLLECTION:-clima}
     # Removed `env_file` to force values to come from host environment
     depends_on:
       - mosquitto
@@ -45,12 +48,24 @@ services:
     restart: unless-stopped
     depends_on:
       - broker
-    env_file:
-      - ./skytrack-back/.env
     environment:
       # Use RDS instance connection string from host environment
       # Example: postgresql://username:password@rds-endpoint.region.rds.amazonaws.com:5432/skytrack_db
+      - NODE_ENV=${NODE_ENV:-production}
+      - PORT=${PORT:-3000}
+      - IS_SERVERLESS=${IS_SERVERLESS:-false}
       - DATABASE_URL=${DATABASE_URL}
+      - DIRECT_DATABASE_URL=${DIRECT_DATABASE_URL:-${DATABASE_URL}}
+      - MONGO_CONNECTION_STRING=${MONGO_CONNECTION_STRING}
+      - MONGO_DATABASE=${MONGO_DATABASE:-dadosClima}
+      - MONGO_COLLECTION=${MONGO_COLLECTION:-clima}
+      - MIGRATION_ENABLED=${MIGRATION_ENABLED:-true}
+      - MIGRATION_INTERVAL_MINUTES=${MIGRATION_INTERVAL_MINUTES:-15}
+      - MIGRATION_BATCH_SIZE=${MIGRATION_BATCH_SIZE:-100}
+      - MIGRATION_SYNC_NAME=${MIGRATION_SYNC_NAME:-main_sync}
+      - API_PREFIX=${API_PREFIX:-api}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5173,http://localhost:3000}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
       # Optional: override other DB-related settings for RDS
       - POSTGRES_SSL=${POSTGRES_SSL:-require}
     ports:

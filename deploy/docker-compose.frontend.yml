@@ -14,6 +14,7 @@ services:
       # Configure API endpoints to point to backend instance
       # Can be provided via host env (recommended in VPS):
       - VITE_API_URL=${VITE_API_URL:-http://localhost:3000}
+      - VITE_AUTH_URL=${VITE_AUTH_URL:-https://auth.skytrack.space}
     networks:
       - skytrack-frontend-net
 

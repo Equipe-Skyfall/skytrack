@@ -1,0 +1,23 @@
+services:
+  frontend:
+    image: node:20-alpine
+    working_dir: /app
+    restart: unless-stopped
+    volumes:
+      - ./skytrack-front/frontend:/app
+      - /app/node_modules
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      # Configure API endpoints to point to backend instance
+      # Can be provided via host env (recommended in VPS):
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:3000}
+    networks:
+      - skytrack-frontend-net
+
+networks:
+  skytrack-frontend-net:
+    driver: bridge
+    name: skytrack-frontend-net

@@ -1,0 +1,65 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    restart: unless-stopped
+    ports:
+      - "1883:1883"   # MQTT
+      - "9001:9001"   # MQTT over WebSockets (se necessário)
+    volumes:
+      # Bind-mount local config so it's editable and versioned in the repo
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    networks:
+      - skytrack-backend-net
+
+  broker:
+    build:
+      context: ./skytrack-broker
+      dockerfile: Dockerfile
+    image: skytrack-broker:latest
+    restart: unless-stopped
+    # NOTE: Broker configuration values are now read from the environment
+    # where `docker-compose up` is executed (e.g. your VPS environment).
+    # This avoids loading a local file and allows the host to provide
+    # secrets and connection strings securely.
+    environment:
+      - PORT=3001
+      - MQTT_HOST=mosquitto               # internal service name for Docker network
+      - MQTT_PASSWORD=${MQTT_PASSWORD}    # comes from VPS/host env
+      - MQTT_USERNAME=${MQTT_USERNAME:-}
+      - DATABASE_URL=${DATABASE_URL_BROKER}
+    # Removed `env_file` to force values to come from host environment
+    depends_on:
+      - mosquitto
+    ports:
+      - "3001:3001" # porta HTTP do broker
+    networks:
+      - skytrack-backend-net
+
+  backend:
+    build:
+      context: ./skytrack-back
+      dockerfile: Dockerfile
+    image: skytrack-back:latest
+    restart: unless-stopped
+    depends_on:
+      - broker
+    env_file:
+      - ./skytrack-back/.env
+    environment:
+      # Use RDS instance connection string from host environment
+      # Example: postgresql://username:password@rds-endpoint.region.rds.amazonaws.com:5432/skytrack_db
+      - DATABASE_URL=${DATABASE_URL_BACKEND}
+      # Optional: override other DB-related settings for RDS
+      - POSTGRES_SSL=${POSTGRES_SSL:-require}
+    ports:
+      - "3000:3000" # porta HTTP do backend
+    networks:
+      - skytrack-backend-net
+    # Removed extra_hosts since we're using RDS (external to Docker)
+
+networks:
+  skytrack-backend-net:
+    driver: bridge
+    name: skytrack-backend-net

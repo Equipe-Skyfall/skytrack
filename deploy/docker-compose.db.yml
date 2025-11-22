@@ -1,0 +1,47 @@
+# This file is no longer needed when using AWS RDS or external PostgreSQL instance
+# 
+# To use this local PostgreSQL setup instead of RDS, uncomment the services below
+# and update the backend docker-compose.yml to point to this local database.
+#
+# For RDS setup, you need to:
+# 1. Create an RDS PostgreSQL instance in AWS
+# 2. Set DATABASE_URL_BACKEND environment variable to point to your RDS endpoint
+# 3. Set DATABASE_URL_BROKER environment variable to point to your RDS endpoint
+# 4. Ensure your VPS security groups allow connections to RDS
+#
+# Example RDS connection strings:
+# DATABASE_URL_BACKEND=postgresql://username:password@your-rds-endpoint.region.rds.amazonaws.com:5432/skytrack_db
+# DATABASE_URL_BROKER=postgresql://username:password@your-rds-endpoint.region.rds.amazonaws.com:5432/skytrack_db
+
+# services:
+#   db:
+#     build:
+#       context: ./skytrack_db/postgres
+#       dockerfile: Dockerfile
+#     image: skytrack-postgres:custom
+#     restart: unless-stopped
+#     environment:
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: postgrespw
+#       POSTGRES_DB: skytrack_db
+#       # Optional: configure PostgreSQL settings
+#       POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+#       # Timezone configuration
+#       TZ: America/Sao_Paulo
+#       PGTZ: America/Sao_Paulo
+#     volumes:
+#       - skytrack_postgres_data:/var/lib/postgresql/data
+#       # Optional: mount custom postgresql.conf if needed
+#       # - ./docker/postgres/postgresql.conf:/etc/postgresql/postgresql.conf
+#     ports:
+#       # Map host port 5433 to container 5432 to avoid conflicts with a local Postgres service
+#       - "0.0.0.0:5433:5432"
+#     healthcheck:
+#       test: ["CMD-SHELL", "pg_isready -U postgres -d skytrack_db"]
+#       interval: 30s
+#       timeout: 10s
+#       retries: 3
+#       start_period: 30s
+
+# volumes:
+#   skytrack_postgres_data:

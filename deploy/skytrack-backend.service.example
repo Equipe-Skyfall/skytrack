@@ -1,0 +1,18 @@
+[Unit]
+Description=Skytrack Backend (docker-compose)
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/skytrack
+# Use EnvironmentFile for production (no `export`):
+# EnvironmentFile=/etc/skytrack/env
+# Example environment file lines: DATABASE_URL_BACKEND=...\nPOSTGRES_SSL=require
+Environment=COMPOSE_HTTP_TIMEOUT=200
+ExecStart=/usr/bin/docker compose -f /opt/skytrack/skytrack/deploy/docker-compose.backend.yml up -d
+ExecStop=/usr/bin/docker compose -f /opt/skytrack/skytrack/deploy/docker-compose.backend.yml down
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

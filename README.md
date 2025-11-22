@@ -23,6 +23,7 @@
 - [Requisitos](#requisitos)
 - [Product Backlog](#backlog)
 - [Sprint Backlog](#backsprint)
+- [Deploy e Infraestrutura](#deploy)
 - [Links úteis](#links)
 - [Equipe](#equipe)
 ---
@@ -55,6 +56,15 @@
 ## 👁 Visão do Projeto <a name="visao-do-projeto"></a>
 <p>Nosso projeto é um Sistema de Coleta de Dados Meteorológico em Tempo Real, com foco na prevenção de riscos e desastres naturais. A plataforma visa centralizar e analisar informações, como índices de chuva, captadas por uma rede de sensores de baixo custo. Será incluso um modelo dinâmico para a aceitação de diversos tipos de estações, facilitando a obtenção de dados oriundos de diversas fontes. As informações serão exibidas em um painel de controle moderno e intuitivo, enquanto um sistema de notificações proativo alertará os usuários sobre potenciais riscos, como inundações e deslizamentos. O sistema também incluirá um espaço de conteúdo educacional, expondo de forma clara a lógica utilizada pelo sistema para captação de dados e informações estimadas.</p>
 
+### 🏗️ Arquitetura da Solução
+O sistema é projetado com arquitetura de microsserviços distribuída:
+- **Frontend**: Interface web responsiva desenvolvida em React + TypeScript
+- **Backend**: API RESTful em Node.js com Prisma ORM
+- **Broker/Parser**: Serviço de processamento de dados MQTT em tempo real
+- **Database**: AWS RDS PostgreSQL para alta disponibilidade e escalabilidade
+- **Message Broker**: Eclipse Mosquitto para comunicação IoT
+- **Deploy**: Containerização com Docker e orquestração via Docker Compose
+
 ---
 ## Cronograma de Sprints <a name="cronograma"></a>
 | Sprint | Data | Status | Relatório |
@@ -81,6 +91,9 @@
 <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=black&color=ADD8E6">
 <img src="https://img.shields.io/badge/node-000000?style=for-the-badge&logo=node&logoColor=black&color=ADD8E6">
 <img src="https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/AWS%20RDS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/docker-000000?style=for-the-badge&logo=docker&logoColor=black&color=ADD8E6">
+<img src="https://img.shields.io/badge/MQTT-000000?style=for-the-badge&logo=mqtt&logoColor=black&color=ADD8E6">
 </div>
 
 ### 📃 Estrutura de Branchs 
@@ -198,12 +211,57 @@ Nomenclatura de Variáveis: Utiliza-se o padrão camelCase (ex: nomeCompleto).
 | 3 | [Ver Sprint Backlog](https://github.com/Equipe-Skyfall/skytrack/blob/main/docs/Sprint%203/Backlog_sprint3.md)|
 ---
 
+## 🚀 Deploy e Infraestrutura <a name="deploy"></a>
+
+### Estrutura de Deploy
+O projeto utiliza uma arquitetura distribuída com instâncias separadas:
+
+- **VPS Backend**: Hospeda Backend + Broker/Parser + Mosquitto MQTT
+- **VPS Frontend**: Hospeda a aplicação React
+- **AWS RDS**: Banco de dados PostgreSQL gerenciado
+
+### Arquivos de Configuração
+- [`/deploy/docker-compose.backend.yml`](./deploy/docker-compose.backend.yml) - Configuração do backend, broker e MQTT
+- [`/deploy/docker-compose.frontend.yml`](./deploy/docker-compose.frontend.yml) - Configuração do frontend
+- [`/deploy/docker-compose.db.yml`](./deploy/docker-compose.db.yml) - Configuração local de DB (opcional)
+- [`README_DEPLOY.md`](./README_DEPLOY.md) - Instruções completas de deploy
+
+### Variáveis de Ambiente Principais
+```bash
+# Backend/Broker
+DATABASE_URL_BACKEND=postgresql://user:pass@rds-endpoint.amazonaws.com:5432/skytrack_db
+DATABASE_URL_BROKER=postgresql://user:pass@rds-endpoint.amazonaws.com:5432/skytrack_db
+MQTT_USERNAME=broker_user
+MQTT_PASSWORD=secure_password
+POSTGRES_SSL=require
+
+# Frontend
+VITE_API_URL=https://api.yourdomain.com
+```
+
+### Deploy Rápido
+```bash
+# Configurar variáveis de ambiente
+export DATABASE_URL_BACKEND="postgresql://..."
+export DATABASE_URL_BROKER="postgresql://..."
+export VITE_API_URL="https://api.yourdomain.com"
+
+# Iniciar serviços
+docker-compose -f deploy/docker-compose.backend.yml up -d
+docker-compose -f deploy/docker-compose.frontend.yml up -d
+```
+
+---
+
 ## Links Úteis <a name="links"><a>
 
 - [Arquitetura do Projeto](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Arquitetura%20do%20Projeto.pdf)
 - [Modelo de Entidade e Relacionamento](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Modelo-Entidade-Relacionamento.png)
 - [WireFrame](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Wireframe-Skytrack.pdf)
 - [Product Backlog e Requisitos](https://github.com/Equipe-Skyfall/skytrack/blob/main/dev-docs/Product%20Backlog%20e%20Requisitos-2.pdf)
+- [**📋 Guia Completo de Deploy**](./README_DEPLOY.md)
+- [Configurações Docker](./deploy/)
+- [Documentação da API](https://api-docs.yourdomain.com) <!-- Adicionar quando disponível -->
 
 
 ---

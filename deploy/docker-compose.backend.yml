@@ -28,7 +28,7 @@ services:
       - MQTT_HOST=mosquitto               # internal service name for Docker network
       - MQTT_PASSWORD=${MQTT_PASSWORD}    # comes from VPS/host env
       - MQTT_USERNAME=${MQTT_USERNAME:-}
-      - DATABASE_URL=${DATABASE_URL_BROKER}
+      - DATABASE_URL=${DATABASE_URL}
     # Removed `env_file` to force values to come from host environment
     depends_on:
       - mosquitto
@@ -50,7 +50,7 @@ services:
     environment:
       # Use RDS instance connection string from host environment
       # Example: postgresql://username:password@rds-endpoint.region.rds.amazonaws.com:5432/skytrack_db
-      - DATABASE_URL=${DATABASE_URL_BACKEND}
+      - DATABASE_URL=${DATABASE_URL}
       # Optional: override other DB-related settings for RDS
       - POSTGRES_SSL=${POSTGRES_SSL:-require}
     ports:
